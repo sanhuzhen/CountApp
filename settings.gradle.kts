@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "CountApp"
 include(":app")
- 
+include(":lib_base")
+include(":module_home")
+include(":module_mine")
+include(":module_practice")
