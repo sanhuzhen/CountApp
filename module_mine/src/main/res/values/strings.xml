@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">module_mine</string>
+    <string name="name">昵称</string>
+    <string name="des">增加个人描述，让更多人认识你哟！</string>
+    <string name="signIn">已签到 0 天</string>
+    <string name="sign">签到</string>
+    <string name="week">每周日报</string>
+    <string name="store">商城</string>
+    <string name="error">错题本</string>
+    <string name="xunazhnag">个人勋章</string>
+    <string name="we">关于我们</string>
+    <string name="share">分享给好友</string>
+    <string name="pingjia">评价一下吧</string>
 </resources>
