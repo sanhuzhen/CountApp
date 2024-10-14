@@ -45,7 +45,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.arouter.api)
     kapt(libs.arouter.compiler)
     implementation(libs.androidx.core.ktx)
