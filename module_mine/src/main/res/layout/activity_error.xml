@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/underbackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,4 +28,10 @@
             android:text="错题"
             android:textSize="20sp" />
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="太棒了，还没有错题哟！！！"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"/>
 </RelativeLayout>

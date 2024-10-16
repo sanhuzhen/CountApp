@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.MineFragment">
+    tools:context=".fragment.MineFragment"
+    android:background="@drawable/underbackground">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/user_img_card"

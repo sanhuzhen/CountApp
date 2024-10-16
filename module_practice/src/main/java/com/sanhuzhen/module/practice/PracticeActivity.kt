@@ -68,8 +68,28 @@ class PracticeActivity : BaseActivity<ActivityPracticeBinding>(), GestureOverlay
             if (result.isNotEmpty()) {
                 val str = result[0].name
                 if (type == "比") showCompare(str)
+                else if (type == "加") showAdd()
+                else if (type == "减") showSubtract()
+                else if (type == "乘") showMultiply()
+                else if (type == "除") showDivide()
             }
         }
+    }
+
+    private fun showDivide() {
+
+    }
+
+    private fun showMultiply() {
+
+    }
+
+    private fun showSubtract() {
+
+    }
+
+    private fun showAdd() {
+
     }
 
     private fun showCompare(str: String) {

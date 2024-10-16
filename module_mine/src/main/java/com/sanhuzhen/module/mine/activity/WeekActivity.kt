@@ -16,5 +16,13 @@ class WeekActivity: BaseActivity<ActivityWeekBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initView()
+    }
+    private fun initView() {
+        binding.apply {
+            toolbarBack.setOnClickListener {
+                finish()
+            }
+        }
     }
 }
