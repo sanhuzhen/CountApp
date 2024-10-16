@@ -141,7 +141,13 @@ class PracticeActivity : BaseActivity<ActivityPracticeBinding>(), GestureOverlay
         while (binding.num2.text == binding.num1.text) {
             binding.num2.text = getRandomNumber().toString()
         }
-        binding.compare.text = ""
+        when(type){
+            "比" -> binding.compare.text = ""
+            "加" -> binding.compare.text = "+"
+            "减" -> binding.compare.text = "-"
+            "乘" -> binding.compare.text = "×"
+            "除" -> binding.compare.text = "÷"
+        }
         target++
         binding.page.text = "$target/10"
     }
