@@ -30,19 +30,19 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private fun initView() {
         mBinding.vp2HomeContent.isSaveEnabled = false
         val fragments = ArrayList<Fragment>()
+        fragments.add(MathFragment("比"))
         fragments.add(MathFragment("加"))
         fragments.add(MathFragment("减"))
         fragments.add(MathFragment("乘"))
         fragments.add(MathFragment("除"))
-        fragments.add(MathFragment("比"))
         mBinding.vp2HomeContent.adapter = HomeAdapter(fragments, childFragmentManager, lifecycle)
         TabLayoutMediator(mBinding.tabHome, mBinding.vp2HomeContent) { tab, position ->
             tab.text = when (position) {
-                0 -> "加法练习"
-                1 -> "减法练习"
-                2 -> "乘法练习"
-                3 -> "除法练习"
-                4 -> "比大小练习"
+                0 -> "比大小练习"
+                1 -> "加法练习"
+                2 -> "减法练习"
+                3 -> "乘法练习"
+                4 -> "除法练习"
                 else -> error("迷路了QAQ")
             }
         }.attach()

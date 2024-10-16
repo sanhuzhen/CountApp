@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFC0CB" /> <!-- 默认颜色，这里可以不设置 -->
+    <corners android:radius="100dp" /> <!-- 设置四角为圆角，使其成为椭圆 -->
+    <gradient
+        android:startColor="#90EE90"
+        android:endColor="#FFFFFF"
+        android:type="linear"
+        android:angle="270" />
+</shape>
