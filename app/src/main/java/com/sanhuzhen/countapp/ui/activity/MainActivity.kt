@@ -7,7 +7,7 @@ import com.sanhuzhen.countapp.adapter.ViewPagerAdapter
 import com.sanhuzhen.countapp.databinding.ActivityMainBinding
 import com.sanhuzhen.lib.base.BaseActivity
 import com.sanhuzhen.module.home.fragment.HomeFragment
-import com.sanhuzhen.module.mine.MineFragment
+import com.sanhuzhen.module.mine.fragment.MineFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
