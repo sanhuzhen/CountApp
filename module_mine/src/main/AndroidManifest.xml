@@ -9,6 +9,15 @@
         <activity android:name=".activity.EvaluateActivity">
 
         </activity>
+        <activity android:name=".activity.WeekActivity">
+        </activity>
+        <activity android:name=".activity.ErrorActivity">
+        </activity>
+        <activity android:name=".activity.HonorActivity">
+
+        </activity>
+        <activity android:name=".activity.StoreActivity">
+        </activity>
 
     </application>
 

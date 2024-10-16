@@ -15,7 +15,11 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.bumptech.glide.Glide
 import com.sanhuzhen.lib.base.BaseApp.Companion.appContext
 import com.sanhuzhen.lib.base.BaseFragment
+import com.sanhuzhen.module.mine.activity.ErrorActivity
 import com.sanhuzhen.module.mine.activity.EvaluateActivity
+import com.sanhuzhen.module.mine.activity.HonorActivity
+import com.sanhuzhen.module.mine.activity.StoreActivity
+import com.sanhuzhen.module.mine.activity.WeekActivity
 import com.sanhuzhen.module.mine.databinding.FragmentMineBinding
 
 class MineFragment : BaseFragment<FragmentMineBinding>() {
@@ -53,13 +57,33 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
                 setEditableField("userdes", "请输入签名", "个人签名")
             }
             llWeek.apply {
-
+                setOnClickListener {
+                    startActivity(Intent(requireContext(), WeekActivity::class.java))
+                }
             }
-            llStore.apply {}
-            llError.apply {}
-            llXunzhang.apply {  }
+            llStore.apply {
+                setOnClickListener {
+                    startActivity(Intent(requireContext(), StoreActivity::class.java))
+                }
+            }
+            llError.apply {
+                setOnClickListener {
+                    startActivity(Intent(requireContext(), ErrorActivity::class.java))
+                }
+            }
+            llXunzhang.apply {
+                setOnClickListener {
+                    startActivity(Intent(requireContext(), HonorActivity::class.java))
+                }
+            }
             rlWe.apply {
-                setOnClickListener { Toast.makeText(requireContext(), "功能暂未开放", Toast.LENGTH_SHORT).show() }
+                setOnClickListener {
+                    Toast.makeText(
+                        requireContext(),
+                        "功能暂未开放",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
 
             }
             rlShare.apply {
